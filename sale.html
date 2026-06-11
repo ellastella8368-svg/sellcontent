@@ -1,0 +1,249 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#0d0d0d;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    opacity:0.7;
+}
+
+.hero{
+    height:100vh;
+    background:url("hero.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.55);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    opacity:0.85;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:50px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.about{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    opacity:0.85;
+}
+
+.contact{
+    text-align:center;
+}
+
+.instagram-btn{
+    display:inline-block;
+    padding:15px 30px;
+    border:1px solid white;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    margin-bottom:40px;
+    transition:0.3s;
+}
+
+.instagram-btn:hover{
+    background:white;
+    color:black;
+}
+
+.qr{
+    width:260px;
+    max-width:90%;
+    border-radius:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Visual Stories</h1>
+
+        <p>
+            Capturing authentic moments through photography.
+        </p>
+
+        <a href="#portfolio" class="button">
+            Explore Portfolio
+        </a>
+    </div>
+
+</section>
+
+<section id="portfolio">
+
+    <h2 class="section-title">
+        Featured Work
+    </h2>
+
+    <div class="gallery">
+
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+        <img src="photo4.jpg">
+        <img src="photo5.jpg">
+        <img src="photo6.jpg">
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2 class="section-title">
+        About
+    </h2>
+
+    <div class="about">
+
+        Every photograph tells a story.
+        This portfolio showcases selected work focused on
+        creativity, emotion, and timeless moments.
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 class="section-title">
+        Connect
+    </h2>
+
+    <div class="contact">
+
+        <a href="https://instagram.com/YOUR_HANDLE"
+           target="_blank"
+           class="instagram-btn">
+
+           📸 View Instagram Portfolio
+
+        </a>
+
+        <br>
+
+        <img src="payment-qr.jpg"
+             alt="Payment QR"
+             class="qr">
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Photography Portfolio
+
+</footer>
+
+</body>
+</html>
+```
